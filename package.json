@@ -1,0 +1,25 @@
+{
+  "name": "bettertimers",
+  "version": "0.0.1",
+  "description": "Better way to handle timeouts and intervals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AhadCove/BetterTimers.git"
+  },
+  "keywords": [
+    "timeout",
+    "interval",
+    "javascript",
+    "node"
+  ],
+  "author": "ahadcove",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AhadCove/BetterTimers/issues"
+  },
+  "homepage": "https://github.com/AhadCove/BetterTimers#readme"
+}
