@@ -1,10 +1,11 @@
 {
   "name": "bettertimers",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Better way to handle timeouts and intervals",
   "main": "index.js",
   "scripts": {
     "test": "tap --coverage test/index.js",
+    "fix": "standard --fix",
     "posttest": "standard",
     "semantic-release": "semantic-release"
   },

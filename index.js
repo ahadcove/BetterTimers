@@ -1,36 +1,32 @@
 module.exports = { Timeout: Timeout, Interval: Interval, Clear: Clear }
 
-const KEYS = { TIMEOUT: 'timeout', INTERVAL: 'interval'}
+const KEYS = { TIMEOUT: 'timeout', INTERVAL: 'interval' }
 
 function Timeout (fn, interval) {
-  var id = setTimeout(fn, interval)
+  this.timer = setTimeout(fn, interval)
   this.type = KEYS.TIMEOUT
   this.cleared = false
   this.clear = function () {
     this.cleared = true
-    clearTimeout(id)
+    clearTimeout(this.timer)
   }
 }
 
 function Interval (fn, interval) {
-  var id = setInterval(fn, interval)
+  this.timer = setInterval(fn, interval)
   this.type = KEYS.INTERVAL
   this.cleared = false
   this.clear = function () {
     this.cleared = true
-    clearInterval(id)
+    clearInterval(this.timer)
   }
 }
 
 function Clear (timer) {
-    if(timer && timer.id){
-        timer.clear()
-        // if(timer.type === KEYS.TIMEOUT){
-        //     timer.clear()
-        // } else if(timer.type === KEYS.INTERVAL){
-        //     timer.clear()
-        // }
-    } else {
-        return;
-    }
+  if (timer && timer.timer) {
+    console.log('Is timer')
+    timer.clear()
+  } else {
+    console.log('Is not timer')
+  }
 }
