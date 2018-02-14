@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "tap --coverage test/index.js",
-    "posttest": "standard"
+    "posttest": "standard",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AhadCove/BetterTimers.git"
+    "url": "https://github.com/AhadCove/BetterTimers.git"
   },
   "keywords": [
     "timeout",
@@ -17,7 +18,7 @@
     "javascript",
     "node"
   ],
-  "author": "Bilal Abdullah",
+  "author": "Bilal Abdullah <mr.bilal.abdullah@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/AhadCove/BetterTimers/issues"
@@ -27,5 +28,8 @@
     "nyc": "^11.4.1",
     "standard": "^10.0.3",
     "tap": "^11.1.0"
+  },
+  "devDependencies": {
+    "semantic-release": "^12.4.1"
   }
 }
