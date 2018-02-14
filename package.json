@@ -4,7 +4,8 @@
   "description": "Better way to handle timeouts and intervals",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap --coverage test/index.js",
+    "posttest": "standard"
   },
   "repository": {
     "type": "git",
@@ -16,10 +17,15 @@
     "javascript",
     "node"
   ],
-  "author": "ahadcove",
-  "license": "ISC",
+  "author": "Bilal Abdullah",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/AhadCove/BetterTimers/issues"
   },
-  "homepage": "https://github.com/AhadCove/BetterTimers#readme"
+  "homepage": "https://github.com/AhadCove/BetterTimers#readme",
+  "dependencies": {
+    "nyc": "^11.4.1",
+    "standard": "^10.0.3",
+    "tap": "^11.1.0"
+  }
 }
