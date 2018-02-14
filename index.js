@@ -1,4 +1,4 @@
-module.exports = Timeout; Interval
+module.exports = { Timeout: Timeout, Interval: Interval }
 
 function Timeout (fn, interval) {
   var id = setTimeout(fn, interval)

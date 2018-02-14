@@ -1,6 +1,6 @@
 const test = require('tap').test
-const Timeout = require('../index')
-const Interval = require('../index')
+const Timeout = require('../index').Timeout
+const Interval = require('../index').Interval
 
 test('Timeout Test', function (t) {
   const time = new Timeout(function () { console.log('Test Timeout') }, 2000)
