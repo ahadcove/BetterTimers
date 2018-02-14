@@ -1,4 +1,4 @@
-module.exports = { Timeout: Timeout, Interval: Interval }
+module.exports = { Timeout: Timeout, Interval: Interval, Clear: Clear }
 
 const KEYS = { TIMEOUT: 'timeout', INTERVAL: 'interval'}
 
