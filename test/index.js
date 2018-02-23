@@ -1,7 +1,8 @@
 const test = require('tap').test
-const Timeout = require('../index').Timeout
-const Interval = require('../index').Interval
-const Clear = require('../index').Clear
+const Timeout = require('../dist/index').Timeout
+const Interval = require('../dist/index').Interval
+const Immediate = require('../dist/index').Immediate
+const Clear = require('../dist/index').Clear
 
 test('Timeout Test', function (t) {
   const time = new Timeout(function () { console.log('Test Timeout') }, 2000)
@@ -18,6 +19,15 @@ test('Interval Test', function (t) {
   t.ok(inter.cleared === false)
   inter.clear()
   t.ok(inter.cleared === true)
+  t.end()
+})
+
+test('Immediate Test', function (t) {
+  const imme = new Immediate(function () { console.log('Test Immediate') })
+  t.is(typeof imme, 'object')
+  t.ok(imme.cleared === false)
+  imme.clear()
+  t.ok(imme.cleared === true)
   t.end()
 })
 
