@@ -1,6 +1,6 @@
 {
   "name": "bettertimers",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Better way to handle timeouts, intervals, and  immediates",
   "main": "./dist/index.js",
   "scripts": {
