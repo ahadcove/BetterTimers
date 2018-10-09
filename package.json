@@ -1,6 +1,6 @@
 {
   "name": "bettertimers",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Better way to handle timeouts, intervals, and  immediates",
   "main": "./dist/index.js",
   "scripts": {
@@ -20,18 +20,18 @@
     "javascript",
     "node"
   ],
-  "author": "Bilal Abdullah <mr.bilal.abdullah@gmail.com>",
+  "author": "Bilal Abdullah <ahadcove@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/AhadCove/BetterTimers/issues"
   },
   "homepage": "https://github.com/AhadCove/BetterTimers#readme",
   "dependencies": {
-    "nyc": "^11.4.1",
-    "standard": "^10.0.3",
-    "tap": "^11.1.0"
+    "nyc": "13.0.1",
+    "standard": "12.0.1",
+    "tap": "^12.0.1"
   },
   "devDependencies": {
-    "semantic-release": "^12.4.1"
+    "semantic-release": "15.9.7"
   }
 }

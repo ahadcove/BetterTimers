@@ -1,7 +1,7 @@
 # eslint-config-standard [![travis][travis-image]][travis-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
 
-[travis-image]: https://img.shields.io/travis/feross/eslint-config-standard/master.svg
-[travis-url]: https://travis-ci.org/feross/eslint-config-standard
+[travis-image]: https://img.shields.io/travis/standard/eslint-config-standard/master.svg
+[travis-url]: https://travis-ci.org/standard/eslint-config-standard
 [npm-image]: https://img.shields.io/npm/v/eslint-config-standard.svg
 [npm-url]: https://npmjs.org/package/eslint-config-standard
 [downloads-image]: https://img.shields.io/npm/dm/eslint-config-standard.svg
@@ -11,7 +11,7 @@
 
 #### An ESLint [Shareable Config](http://eslint.org/docs/developer-guide/shareable-configs) for [JavaScript Standard Style](http://standardjs.com)
 
-[![JavaScript Style Guide - Standard Style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
+[![JavaScript Style Guide - Standard Style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 
 ## Install
 
@@ -28,13 +28,23 @@ You can learn more about
 [Shareable Configs](http://eslint.org/docs/developer-guide/shareable-configs) on the
 official ESLint website.
 
-To use the JavaScript Standard Style shareable config, first run this:
+**If you want to set up the config automatically**, follow these steps in your project directory:
+
+1. `npx eslint --init`
+2. Select "Use a popular style guide."
+3. Select "Standard."
+4. Select a config file format.
+5. If prompted, confirm the installation of the necessary dependencies.
+
+The above steps will automatically set up an ESLint configuration and install the necessary dependencies for you.
+
+**If you want to set up the config manually**, run the following command:
 
 ```bash
 npm install --save-dev eslint-config-standard eslint-plugin-standard eslint-plugin-promise eslint-plugin-import eslint-plugin-node
 ```
 
-Then, add this to your .eslintrc file:
+Then, add this to your `.eslintrc` file:
 
 ```
 {
@@ -59,10 +69,10 @@ to quickly check your style.
 Use this in one of your projects? Include one of these badges in your readme to
 let people know that your code is using the standard style.
 
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
+[![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 
 ```markdown
-[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](http://standardjs.com)
+[![js-standard-style](https://cdn.rawgit.com/standard/standard/master/badge.svg)](http://standardjs.com)
 ```
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
