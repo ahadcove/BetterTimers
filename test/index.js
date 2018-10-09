@@ -40,7 +40,7 @@ test('Clear Test', function (t) {
 })
 
 test('Clear Should fail', function (t) {
-  const time = {abc: 1}
+  const time = { abc: 1 }
   t.is(typeof time, 'object')
   Clear(time)
   t.ok(time.cleared === undefined)
