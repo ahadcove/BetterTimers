@@ -1,10 +1,13 @@
 {
   "name": "bettertimers",
-  "version": "0.0.10",
-  "description": "Better way to handle timeouts, intervals, and  immediates",
+  "version": "0.0.11",
+  "author": "Ahad Cove <ahadcove@gmail.com>",
+  "description": "Better way to handle timeouts and intervals",
+  "license": "Apache-2.0",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "babel src -d dist",
+    "build": "tsc",
     "test": "tap --coverage test/index.js",
     "fix": "standard --fix",
     "posttest": "standard",
@@ -20,19 +23,15 @@
     "javascript",
     "node"
   ],
-  "author": "Bilal Abdullah <ahadcove@gmail.com>",
-  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/AhadCove/BetterTimers/issues"
   },
   "homepage": "https://github.com/AhadCove/BetterTimers#readme",
-  "dependencies": {
-    "nyc": "13.0.1",
-    "tap": "^12.0.1"
-  },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "semantic-release": "15.9.7",
-    "standard": "^12.0.1"
+    "nyc": "13.0.1",
+    "standard": "12.0.1",
+    "tap": "12.0.1",
+    "tslib": "^1.9.3",
+    "typescript": "^3.1.3"
   }
 }

@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "target": "es5",
+				"moduleResolution": "node",
+				"declaration": true,
+				"declarationMap": true,
+    		"sourceMap": true,
+				"rootDir": "./src",
+				"importHelpers": true
+    },
+    "include": [
+			"src/**/*"
+    ],
+		"exclude": [
+			"node_modules",
+			"dist"
+    ]
+}
