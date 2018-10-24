@@ -29,7 +29,7 @@ var timeO = new Timeout(function () {
 }, 5000);
 console.log(timeO.isActive()); // true
 timeO.clear();
-console.log(timeO.cisActive()); // false
+console.log(timeO.isActive()); // false
 ```
 
 #### Interval
