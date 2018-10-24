@@ -1,6 +1,6 @@
 {
   "name": "bettertimers",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "author": "Ahad Cove <ahadcove@gmail.com>",
   "description": "Better way to handle timeouts and intervals",
   "license": "Apache-2.0",
